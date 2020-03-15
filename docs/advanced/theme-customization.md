@@ -1,5 +1,5 @@
 
-##Theme customization
+## Theme customization
 
 Fruum comes with a default theme. Themes are built in [SASS](http://sass-lang.com/) language with certain parts being overridable.
 

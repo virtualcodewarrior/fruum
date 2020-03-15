@@ -1,5 +1,5 @@
 
-##Attaching images
+## Attaching images
 
 You can attach images in your posts by using the camera icon on the footer. PNG and JPEG images are supported.
 

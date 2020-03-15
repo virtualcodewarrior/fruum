@@ -1,5 +1,5 @@
 
-##Plugin development guide
+## Plugin development guide
 
 Plugins are divided in two categories, server and client plugins.
 
@@ -32,7 +32,7 @@ In order for a plugin to be used by the system, it must be defined in ```config.
 }
 ```
 
-####Server plugins
+#### Server plugins
 
 Server plugins work like node.js modules. Under the server.js file define a module using:
 
@@ -45,7 +45,7 @@ module.exports = MyPlugin;
 For a list of methods that can be implemented, check the [reference plugin](https://github.com/virtualcodewarrior/fruum/blob/master/plugins/reference/server.js).
 
 Also a good example is the [giphy plugin](https://github.com/virtualcodewarrior/fruum/tree/master/plugins/giphy), which implements a user command such as ```/giphy hello```.
-####Client plugins
+#### Client plugins
 
 Client plugins follow a different initialization structure as they run in the fruum client code. The client.js file, defines a list of methods to implement and the _optional_ template.html file, define [underscore templates](http://underscorejs.org/) that can be used by the plugin.
 

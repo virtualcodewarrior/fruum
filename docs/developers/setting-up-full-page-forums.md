@@ -1,6 +1,6 @@
 
-##Setting up full page forums
-####Basic setup
+## Setting up full page forums
+#### Basic setup
 
 By default fruum is loaded in the embedded mode. However there are cases where developers want a dedicated forum page, where fruum is always visible by default in par with the embedded mode.
 

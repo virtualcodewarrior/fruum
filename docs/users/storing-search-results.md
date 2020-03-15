@@ -1,5 +1,5 @@
 
-##Storing search results
+## Storing search results
 
 Administrators can bookmark search queries using **stored searches**.
 

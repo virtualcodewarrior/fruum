@@ -1,5 +1,5 @@
 
-##Manage categories as administrator
+## Manage categories as administrator
 
 Fruum category is a helping element to categorize your main content.
 
@@ -28,7 +28,7 @@ A created category is managed in two different levels:
  - Inside the list by clicking the gear icon on the right with actions for **edit**, **positioning** and **delete**.
  - When inside the category clicking the category **edit** icon on the top.
 
-###What to see next ?
+### What to see next ?
 
  - ![Add an article as administrator](add-an-article-blog-as-administrator.md)
  - ![Add a thread](add-a-thread.md)

@@ -1,5 +1,5 @@
 
-##Slack
+## Slack
 Installation instructions
 
 To enable the Slack plugin edit ```config.json``` and add the following entry (if not already there) in the ```plugins``` section:

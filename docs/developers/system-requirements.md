@@ -1,5 +1,5 @@
 
-##System requirements
+## System requirements
 
 The minimum system requirement for running fruum is a node.js environment.
 

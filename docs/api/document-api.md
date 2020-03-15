@@ -1,10 +1,10 @@
 
-##Document API
+## Document API
 
 With the document api you can manage categories, articles, threads, channels, chat messages and thread posts or article comments.
 
 Each and everyone of the above is a document in the database and is treated using the same structure with optional fields, depending on the case.
-####Document structure
+#### Document structure
 ```
 {
     //document id
@@ -63,7 +63,7 @@ Each and everyone of the above is a document in the database and is treated usin
 }
 ```
 
-####Get a document (select)
+#### Get a document (select)
 
 GET: ```/api/v1/docs/<id>```
 
@@ -93,7 +93,7 @@ curl --user 'myforum:ABCDEF' -X POST -H "Content-Type: application/json" -d '{
 }' 'http://localhost:3000/api/v1/docs/'
 ```
 
-####Update an existing document (update)
+#### Update an existing document (update)
 
 PUT: ```/api/v1/docs/<id>```
 
@@ -105,7 +105,7 @@ curl --user 'myforum:ABCDEF' -X PUT -H "Content-Type: application/json" -d '{
 }' 'http://localhost:3000/api/v1/docs/hello-fix-this'
 ```
 
-####Delete a document (delete)
+#### Delete a document (delete)
 
 DELETE: ```/api/v1/docs/<id>```
 
@@ -115,7 +115,7 @@ Example:
 curl --user 'myforum:ABCDEF' -X DELETE -H "Content-Type: application/json" 'http://localhost:3000/api/v1/docs/my-category'
 ```
 
-###What to see next?
+### What to see next?
 
 [Generating API keys](generating-api-keys.md)
 

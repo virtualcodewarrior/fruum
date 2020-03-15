@@ -1,5 +1,5 @@
 
-##Add a thread
+## Add a thread
 
 Thread are the basic communication streams in fruum.
 
@@ -14,6 +14,6 @@ The person that created the thread can manage it:
  - via the threads list, by clicking the gear icon on the right of the thread title, to edit it. In case the thread creator is an admin an additional options to **pin** and **delete** the thread are available.
  - for administrator created threads, inside the thread clicking the gear icon on the thread title. The administrator can **edit**, **turn private**, **disable posts** or **delete** the thread.
 
-###What to see next?
+### What to see next?
 
  - ![Copy a link, watch a thread, report and manage a post](copy-a-link-watch-a-thread-report-and-manage-a-post.md)

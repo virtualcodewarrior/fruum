@@ -1,6 +1,6 @@
 
-##Presence API
-####Count online users
+## Presence API
+#### Count online users
 
 GET: ```/api/v1/presence/overview```
 
@@ -22,7 +22,7 @@ Returns:
 }
 ```
 
-####Count online users under document
+#### Count online users under document
 
 GET: ```/api/v1/presence/overview/<id>```
 
@@ -38,7 +38,7 @@ Returns:
 
 > Passing the ```?children``` to the URL will also take into account users visiting document and any of its children.
 
-####Count all users on per document breakdown
+#### Count all users on per document breakdown
 
 GET: ```/api/v1/presence/docs```
 
@@ -64,7 +64,7 @@ Returns:
 ```
 
 Documents that have no visitors are NOT returned by the API.
-####Get details of all online users
+#### Get details of all online users
 
 GET: ```/api/v1/presence/users```
 
@@ -78,7 +78,7 @@ Returns:
 ]
 ```
 
-####Get details of all online users viewing document
+#### Get details of all online users viewing document
 
 GET: ```/api/v1/presence/users/<id>```
 

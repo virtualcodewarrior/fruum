@@ -38,3 +38,23 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 ```
+
+### Documentation
+
+
+[For fruum users](docs/users.md):
+Detailed explanation for all the things that you can do
+
+[For developers](docs/developers.md):
+Installation instructions and other technicalities
+
+[API documentation](docs/api.md):
+Use the API to directly modify fruum
+
+[Advanced topics](docs/advanced.md):
+Further customize and expand fruum
+
+[Plugins & integrations](docs/plugins.md):
+List of featured fruum plugins
+
+

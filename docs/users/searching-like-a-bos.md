@@ -1,5 +1,5 @@
 
-##Searching (like a boss)
+## Searching (like a boss)
 
 Fruum is empowered by elasticsearch, so search should be awesome.
 

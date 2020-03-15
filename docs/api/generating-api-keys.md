@@ -1,5 +1,5 @@
 
-##Generating API keys
+## Generating API keys
 
 To use the API you must generate API keys for your forum. Assuming that your forum is being register as myforum, execute the following command to generate an api key:
 

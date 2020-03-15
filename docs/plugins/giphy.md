@@ -1,5 +1,5 @@
 
-##Giphy
+## Giphy
 
 The giphy plugin allows you to bring a random [giphy](http://giphy.com/) image by executing the following command in your chat input or post:
 

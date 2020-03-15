@@ -1,5 +1,5 @@
 
-##Email notifications
+## Email notifications
 
 When users watch a topic or a stream in general they get notifications when someone replies.
 

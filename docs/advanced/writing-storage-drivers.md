@@ -1,5 +1,5 @@
 
-##Writing storage drivers
+## Writing storage drivers
 
 By default, fruum comes with an elasticsearch storage driver. Potential examples for this driver could be MySQL, Postgres or MongoDB integrations.
 

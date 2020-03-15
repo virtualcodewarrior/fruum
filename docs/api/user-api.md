@@ -1,8 +1,8 @@
 
-##User API
+## User API
 
 Use the User API to manage your users. Get info about their profile and their activity.
-####User structure
+#### User structure
 
 ```
 {
@@ -37,7 +37,7 @@ Use the User API to manage your users. Get info about their profile and their ac
 }
 ```
 
-####Get user profile
+#### Get user profile
 
 GET: ```/api/v1/users/<id>```
 
@@ -81,12 +81,12 @@ curl --user 'myforum:ABCDEF' -X POST -H "Content-Type: application/json" -d '{
 ```
 
 Returns the user model (similar to GET)
-####Update user
+#### Update user
 
 PUT: ```/api/v1/users/<id>```
 
 Returns the user model (similar to GET)
-####Get user topics
+#### Get user topics
 
 GET: ```/api/v1/users/<id>/topics[?admin]```
 
@@ -111,7 +111,7 @@ Returns the number of user created topics.
 
 > By default only public topics are counted. To count all topics including administrator permissive ones, pass the **&admin** param to the request.
 
-####Get user replies
+#### Get user replies
 
 GET: ```/api/v1/users/<id>/replies[?admin]```
 
@@ -128,7 +128,7 @@ Returns:
 
 > By default only public replies are returned. To return all replies including administrator permissive ones, pass the **&admin** param to the request.
 
-####Count user replies
+#### Count user replies
 
 GET: ```/api/v1/users/<id>/replies?count[&admin]```
 

@@ -1,5 +1,5 @@
 
-##Authentication
+## Authentication
 
 Authentication is performed using [HTTP Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication), with the following credentials:
 

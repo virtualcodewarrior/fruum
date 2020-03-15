@@ -1,5 +1,5 @@
 
-##Installation instructions
+## Installation instructions
 
 Make sure you are running at least node.js 8.x.x and npm 5.x.x. Verify by doing the following in the console:
 
@@ -48,7 +48,7 @@ Check for options by executing the command
 npm start -- --help
 ```
 
-####What to see next?
+#### What to see next?
 
  - [Website integration](website-integration.md)
 

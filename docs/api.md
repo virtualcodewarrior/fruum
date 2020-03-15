@@ -1,5 +1,5 @@
 
-##API documentation Use the API to directly modify fruum
+## API documentation Use the API to directly modify fruum
 
 [Generating API keys](api/generating-api-keys.md)
 

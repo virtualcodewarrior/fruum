@@ -1,5 +1,5 @@
 
-##Writing cache drivers
+## Writing cache drivers
 
 By default, fruum comes with simple memory storage cache. Examples for this could be redis or memcached integrations.
 

@@ -1,5 +1,5 @@
 
-##For developers Installation instructions and other technicalities
+## For developers Installation instructions and other technicalities
 
 [System requirements](developers/system-requirements.md)
 

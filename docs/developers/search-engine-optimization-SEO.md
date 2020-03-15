@@ -1,5 +1,5 @@
 
-##Search Engine Optimization (SEO)
+## Search Engine Optimization (SEO)
 
 Modern search engines are able to execute Javascript and index your pages. However for fruum to be indexed by spiders you should provide a page where your fruum forum appears in full page mode in par with the embedded one.
 

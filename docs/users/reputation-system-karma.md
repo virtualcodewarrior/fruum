@@ -1,5 +1,5 @@
 
-##Reputation system (karma)
+## Reputation system (karma)
 
 Fruum incorporates a reputation system using karma points.
 

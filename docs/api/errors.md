@@ -1,5 +1,5 @@
 
-##Errors
+## Errors
 
 The API returns standard HTTP status codes:
 

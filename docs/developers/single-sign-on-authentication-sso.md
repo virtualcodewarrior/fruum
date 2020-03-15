@@ -1,6 +1,6 @@
 
-##Single Sign On authentication (SSO)
-####Overview
+## Single Sign On authentication (SSO)
+#### Overview
 
 Fruum is designed to easily hook to a website's existing user base using the following flow:
 
@@ -16,7 +16,7 @@ Fruum is designed to easily hook to a website's existing user base using the fol
 🌐 User permissions are sent back to browser
 ```              
 
-####Registering an authentication server
+#### Registering an authentication server
 
 Before starting you must register a an authentication URL to the application's (hosting) server by using the command:
 

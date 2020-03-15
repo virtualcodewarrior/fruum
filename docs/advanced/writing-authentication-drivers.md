@@ -1,5 +1,5 @@
 
-##Writing authentication drivers
+## Writing authentication drivers
 
 By default, fruum comes with remote authentication driver. Potential examples for this driver could be using Passport for authentication.
 

@@ -1,5 +1,5 @@
 
-###Writing email drivers
+### Writing email drivers
 
 By default, fruum comes with mandrill, mailgun and a generic SMTP email driver. Other examples could be Sendgrid or gmail drivers.
 

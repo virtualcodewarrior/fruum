@@ -1,6 +1,6 @@
 
-##Website integration
-####Basic integration
+## Website integration
+#### Basic integration
 
 To install fruum to a website add the following snippet inside the ```<head>``` tag.
 
@@ -55,7 +55,7 @@ Fruum.launch();
 ```
 
 command.
-###What to see next?
+### What to see next?
 
  - [Single Sign On authentication](single-sign-on-authentication-sso.md)
 

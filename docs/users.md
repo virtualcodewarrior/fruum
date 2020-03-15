@@ -1,5 +1,5 @@
 
-##For fruum users 
+## For fruum users 
 
 Detailed explanation for all the things that you can do
 
