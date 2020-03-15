@@ -41,7 +41,7 @@ For example:
 <div>
   <a href="#fruum:home">Fruum home</a>
   <span fruum-link="home">Fruum home</span>
-  <span fruum-link="docs">Fruum docs</a>
+  <span fruum-link="docs">Fruum docs</span>
   <a href="#fruum:*">Restore fruum</a>
 </div>
 ```

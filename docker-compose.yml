@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  elastic-search:
+    image: airdock/elasticsearch
+    container_name: fruum-elasticsearch
+    ports:
+      - '9200:9200'
+      - '9300:9300'
+

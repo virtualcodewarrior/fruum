@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Fruum</title>
+    <!-- Generic meta tags -->
+    <meta name="description" content="Open source, embeddable solution for your forum, documentation and real-time chat on top of your userbase"/>
+    <!-- Generic meta tags -->
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:image" content="https://fruum.github.io/style/images/facebooklogo.jpg"/>
+    <meta property="og:title" content="An open-source embeddable solution for your forum, documentation and real-time chat for your users base"/>
+    <meta property="og:url" content="https://fruum.github.io"/>
+    <meta property="og:site_name" content="Fruum"/>
+    <meta property="og:type" content="website"/>
+    <!-- Open Graph meta tags -->
+
+    <link rel="stylesheet" href="style/presentation.css" type="text/css"/>
+    <link rel="stylesheet" href="style/explanation.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="js/hello.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/anim.js"></script>
+    <script type="text/javascript">
+      (function() {
+        var host = 'fruum.github.io';
+        if (window.location.host === host && window.location.protocol !== "https:") {
+          window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+          return;
+        }
+        window.fruumSettings = {
+          history: true,
+          login: 'javascript:login();',
+          user: {
+            id: "<%= userid %>",
+            hash: "<%= hash %>"
+          },
+        };
+        var app_id = 'myforum';
+        //check for custom app_id
+        var fragment = window.location.href.split('#')[1];
+        if (fragment && fragment.indexOf('app:') === 0) {
+          app_id = fragment.substr(4);
+        }
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        if (window.location.host === host)
+          script.src = 'https://fruum.herokuapp.com/go/' + app_id;
+        else
+          script.src = 'http://127.0.0.1:3030/go/' + app_id;
+        (document.head || document.getElementsByTagName("head")[0]).appendChild(script);
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/" class="logo"></a>
+        <ul class="mainmenu">
+          <li class="menuitem">
+            <a href="javascript:;" fruum-link="*">
+              in action
+            </a>
+          </li>
+          <li class="menuitem">
+            <a href="forum.html">Forum</a>
+          </li>
+        </ul>
+        <a href="https://github.com/fruum/fruum" class="menu-right">Project on github</a>
+      </div>
+    </header>
+    <section id="home">
+      <div class="container">
+        <h1>Speed up communications between you and your users.</h1>
+        <h3>Create your forum, documentation, and chat streams for your web application.<br>On your userbase, embeddable and real-time.</h3>
+
+        <a href="javascript:;" fruum-link="*" class="main-cta-buttonlink">Test it out</a>
+
+        <div id="explanation">
+          <div class="container">
+            <div class="explanation-window">
+              <div class="explanation-bar"><span class="explanation-dot"></span><span class="explanation-dot"></span><span class="explanation-dot"></span></div>
+              <div class="explanation-main-content">
+                <div class="explanation-sitetitle">Your awesome web app</div>
+                <div class="explanation-actionsright">forum | docs<span class="explanation-login"> | login</span></div>
+                <div class="explanation-divider"></div>
+
+                <div class="explanation-loggedin" style="opacity: 0;">Hello Nick<span class="explanation-avatar1" style="text-indent: -1px;">n</span></div>
+
+                <div class="explanation-row">
+                  <div class="explanation-block" style="float: left;width:35%;"></div>
+                  <div class="explanation-textarea" style="float: right; width:60%;">
+                    <div class="explanation-textblock-header" style="width: 70%;"></div>
+                    <div class="explanation-textblock" style="width: 90%;"></div>
+                    <div class="explanation-textblock" style="width: 70%;"></div>
+                    <div class="explanation-textblock" style="width: 85%;"></div>
+                    <div class="explanation-textblock" style="width: 65%;"></div>
+
+
+                  </div>
+                </div>
+
+                <div class="explanation-row">
+                  <div class="explanation-block" style="width:45%;clear:left;float:left;">
+                    WOW feature that<br>needs some explanation
+                    <span class="explanation-fruumdot" style="bottom: 10px;right: 10px;">?</span>
+                  </div>
+                  <div class="explanation-block" style="position: relative;width:45%;float:right;">
+                  </div>
+                </div>
+              </div>
+              <div class="explanation-fruum">
+                <div class="explanation-fruumclose">x</div>
+                <div class="explanation-fruumtitle">
+                  WOW Feature: all the details
+                </div>
+
+                <div class="explanation-fruumcontent">
+                  <div class="explanation-fruumitem">
+                    <div class="explanation-textarea" style="width:100%;">
+                      <div class="explanation-textblock" style="width: 90%;"></div>
+                      <div class="explanation-textblock" style="width: 70%;"></div>
+                      <div class="explanation-textblock" style="width: 85%;"></div>
+                      <div class="explanation-textblock" style="width: 65%;"></div>
+                    </div>
+                  </div>
+                  <div class="explanation-fruumitem js-comment">
+                    <span class="explanation-avatar1">n</span>
+                    <div class="explanation-fruumtext">
+                      Hey check this new feature everybody! I believe you all can get a lot by using it!
+                    </div>
+                  </div>
+
+                  <div class="explanation-fruumitem js-comment">
+                    <span class="explanation-avatar2">A</span>
+                    <div class="explanation-fruumtext">
+                      This is really awesome Nick! Thank you!!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="explanation-fruumactions">
+                  <span class="explanation-add">+</span>
+                  <span>#</span>
+
+                  <span class="explanation-avatar1">n</span>
+                </div>
+              </div>
+              <div class="explanation-marker" style="left: 90%;top:10%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="description">
+      <div class="container">
+        <h2 class="main-descriptor">
+          Fruum is using <a href="https://nodejs.org" target="_blank">node.js</a> for the backend and <a href="https://www.elastic.co" target="_blank">elasticsearch</a> to store communication streams. If elasticsearch doesn't fit your needs you can <a href="javascript:;" fruum-link="home">create a plugin</a> for your case.
+        </h2>
+      </div>
+    </section>
+    <section id="features">
+      <div class="container">
+        <ul class="features-set">
+          <li class="feature-item">
+            <div class="feature-icon">
+              <i class="fa fa-rocket"></i>
+            </div>
+            <h4 class="feature-description">
+              New posts, forum topics and chat messages are instantly available in real-time.
+            </h4>
+            <a href="javascript:;" fruum-link="Sandbox" class="read-more main-link">Try it out!</a>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">
+              <i class="fa fa-random"></i>
+            </div>
+            <h4 class="feature-description">
+              Flexible setup for your communication, by default supporting forum, chat and documentation.
+            </h4>
+            <a href="javascript:;" fruum-link="Category-in-fruum-organise-and-customise-your-content" class="read-more">Read more</a>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">
+              <i class="fa fa-user"></i>
+            </div>
+            <h4 class="feature-description">
+              No additional signup required, authentication binds to your existing userbase.
+            </h4>
+            <a href="javascript:;" fruum-link="User-authentication" class="read-more">Read more</a>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <h4 class="feature-description">
+              Extend and hook using plugins and backend drivers.
+            </h4>
+            <a href="javascript:;" fruum-link="advanced-topics" class="read-more">Read more</a>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">
+              <i class="fa fa-paint-brush"></i>
+            </div>
+            <h4 class="feature-description">
+              Apply your web-app theme, overriding or extending the existing SASS based CSS.
+            </h4>
+            <a href="javascript:;" fruum-link="theme-customization" class="read-more">Read more</a>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">
+              <i class="fa fa-heart"></i>
+            </div>
+            <h4 class="feature-description">
+              Fruum is open-source! Fork, clone or copy the existing codebase and don't forget to give back to the community!
+            </h4>
+            <a href="https://github.com/fruum/fruum" class="read-more">View on github</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="plugins">
+      <div class="container">
+        <h2 class="main-descriptor">
+          With Fruum you can support many ways of communication (a.k.a. not only text <i class="fa fa-smile-o"></i>)
+        </h2>
+        <ul class="features-set">
+          <li class="feature-promo">
+            <img src="style/images/plugin-dropbox.png" width="170" height="54"/>
+          </li>
+          <li class="feature-promo">
+            <img src="style/images/plugin-youtube.png" width="170" height="54"/>
+          </li>
+          <li class="feature-promo">
+            <img src="style/images/plugin-soundcloud.png" width="170" height="54"/>
+          </li>
+          <li class="feature-promo">
+            <img src="style/images/plugin-twitch.png" width="170" height="54"/>
+          </li>
+          <li class="feature-promo">
+            <img src="style/images/plugin-giphy.png" width="170" height="54"/>
+          </li>
+          <li class="feature-promo">
+            <img src="style/images/plugin-vimeo.png" width="170" height="54"/>
+          </li>
+        </ul>
+        <p class="disclaimer">Need more? Checkout an existing <a href="https://github.com/fruum/fruum/tree/master/plugins">plugin example on github</a> and extend Fruum to support to your needs.</p>
+      </div>
+    </section>
+    <section id="final-promo">
+      <div class="container">
+        <h2 class="main-descriptor">
+          Want to find out more? Check out the project on <a href="https://github.com/fruum/fruum" class="main-link read-more">github</a> or <a href="javascript:;" fruum-link="Documentation" class="read-more">view the docs</a>.
+        </h2>
+      </div>
+    </section>
+
+    <section id="login" style="display: none;">
+      <div class="popup-container">
+        <p>
+          This login is for your own testing delight and to help make Fruum better.
+        </p>
+        <h6>Login with your:</h6>
+        <a href="#" class="login-github" data-auth="github"><i class="fa fa-github"></i> Github account</a>
+        <a href="#" class="login-google" data-auth="google"><i class="fa fa-google"></i> Google account</a>
+        <br>
+        <p class="popup-disclaimer">
+          Your account avatar and username will be displayed in Fruum, you will also receive email notifications for topics you watch.
+        </p>
+        <a href="#" class="popup-close">close login</a>
+      </div>
+    </section>
+  </body>
+</html>

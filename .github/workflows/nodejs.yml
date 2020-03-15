@@ -1,0 +1,29 @@
+name: vicowa-fruum
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.16.2]
+    steps:
+      - uses: getong/elasticsearch-action@v1
+        with:
+          elasticserach version: '2.4'
+          host port: 9200
+          container port: 9200
+          discovery type: 'single-node'
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run build --if-present
+      - run: npm test
+        env:
+          CI: true
