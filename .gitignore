@@ -3,3 +3,4 @@ logs
 config.local.json
 build
 
+.idea
